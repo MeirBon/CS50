@@ -1,0 +1,73 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 7
+ * Meir Noordermeer (11341335)
+ *
+ * Global CSS.
+ **/
+
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#top
+{
+    /* surround with whitespace */
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#top .nav
+{
+    /* center navigation pills */
+    display: inline-block;
+}
+
+#middle .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+}
+
+#table
+{
+    /* allign table to middle of page */
+    margin: 0px auto;
+    text-align: left;
+    
+    /* create border and set color */
+    border-style: solid;
+    border-color: #585858 white;
+    
+    /* seperate columns */
+    border-collapse: separate;
+    
+    /* add spacing and padding */
+    border-spacing: 80px 6px;
+    padding: 5px 0;
+}
+
+#clear
+{
+    /* align clear history button */
+    margin: 8px auto;
+    text-align: center;
+}

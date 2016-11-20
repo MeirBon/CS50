@@ -1,0 +1,62 @@
+0.  Supported different colors
+	BMP: 24 bits colors so 16.7 million colors (2^24).
+	GIF: 8 bits so 256 colors (2^8).
+	JPEG: 24 bits so 16.7 million colors (2^24).
+	PNG: 24 bits so 16.7 million colors (2^24).
+    
+1.  GIF
+
+2.  Lossy means that the used compression method creates 
+    an image that could be of less quality than the original.
+    Lossless means that the image doesn't lose any details/quality.
+    
+3.  JPEG
+
+4.  When a file is deleted the metadata that pointed to the file
+    is deleted, but the file itself doesn't get overwritten. This
+    means that the file is still there, just the information of its
+    location gets deleted.
+
+5.  Erase the disk completely by rewriting every bit with either 
+    0's or 1's.
+
+6.  stdint.h is a header file which provides a set of typedefs 
+    that specify exact-width integer types. So stdint.h includes 
+    structs that define different types of ints.
+    
+7.  To specify how many bits need to be allocated to store a value
+    ( 8 meaning 8 bits, 32 meaning 32 bits and u- (uint8_t) means the
+    integer is unsigned (= only positive values). So each serves
+    a purpose in a different context.
+
+8.  BYTE    = 1 Byte, 8 bits
+    DWORD   = 4 Bytes, 32 bits
+    LONG    = 4 Bytes, 32 bits
+    WORD    = 2 Bytes, 16 bits
+
+9.  In hexadecimal it must be: 42 4D, or in decimal: 66, 77.
+
+10. biSize is the size of only the BITMAPINFOHEADER structure.
+    bfSize is the size of the whole bitmap file.
+
+11. If biHeight is negative it means the image is top-down 
+    DIB (device-independent bitmap). So the start of the image
+    is in the top left corner. If biHeight would be positive
+    the start of the image would be in the bottem left corner.
+
+12. biBitCount
+
+13. If the fopen fails to write the output file. For example if the user 
+    is unauthorized to create the file, or there is not enough space available.
+
+14. The third argument specifies the size (in this case the 
+    size of BITMAPINFOHEADER) fread needs to read.
+    In copy.c fread always reads 1 struct (BITMAPINFOHEADER), so 1 element.
+
+15. 3   =   ((4 - (3 * 3) % 4) % 4)
+
+16. It sets the file position indicator to a new specified location.
+
+17. It specifies fseek to move from the current position in the file.
+
+18. Rick Astley

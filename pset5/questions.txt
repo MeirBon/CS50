@@ -1,0 +1,35 @@
+0.  Pneumonoultramicroscopicsilicovolcanoconiosis is the longest word in the English language published in a dictionary.
+    It is a long disease.
+    
+1.  It returns resource usage measures like CPU usage and memory usage.
+
+2.  16
+
+3.  If they are passed as values, the whole structs will be copied into calculate which wastes memory and cpu usage.
+
+4.  First load a textfile and a dictionary. When everything is loaded loop through every char of a word, if it's alphabetical or an apostrophe then add the char to an array called word,
+    if a char is numeric or longer than the max length (45), the word is invalid to be checked. If a word is invalid, the index gets reset to prepare for a new word.
+    Check if char is a number, if so it is not checkable so loop to end of line and reset index to prepare for a new word. 
+    If all goes well we have a word that needs checking (= index >0). Terminate the current word and update the counter for the next word in the loop. 
+    Check spelling, if the word is mispelled it is printed on screen for the user. 
+    Reset the index to prepare for a new word.
+
+5.  You first have to allocate memory with scanf, there are no limits on the strings length 
+    and with fgetc we are able to check numerical inputs and other symbols easier. 
+
+6.  The input that check and load get need to remain original. We just have to check the input, not modify it. This ensures the files
+    stay original.
+    
+7.  Started off with a trie, but during the week also made a spell-checker that used a hash table.
+    At first the trie was faster, but eventually my hash implementation became faster by using a 
+    better hash function.
+    
+8.  First run was with my trie, it ran austinpowers.txt in 0.20 seconds.
+
+9.  Reduce function calls, set optimization flag to 3, better hash function.
+
+10. I could have made the trie faster by allocating a chunk of memory on forehand, but I didn't have
+    enough time left to succesfuly implement this and if not correctly implemented it would be a 
+    very inefficient way of programming. As I would probably leave a large amount of memory unused.
+    The hash function could always become faster with a better hash function, but I think the one 
+    I found is already super fast.
